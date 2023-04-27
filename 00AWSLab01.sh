@@ -267,7 +267,9 @@ aws ec2 create-tags \
 ## Crear una instancia EC2  (con una imagen de Windows Server 2022 del 22/10/2022)
 echo ""
 echo "Creando instancia EC2 Windows  ##################################"
+########### MODIFICAR ami-0e38fa17744b2f6a5 EC2 Windows por la instancia deseada #############
 AWS_AMI_Windows_ID=ami-0e38fa17744b2f6a5
+##############################################################################################
 AWS_EC2_INSTANCE_ID=$(aws ec2 run-instances \
   --image-id $AWS_AMI_Windows_ID \
   --instance-type t2.micro \
