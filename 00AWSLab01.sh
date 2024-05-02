@@ -183,7 +183,7 @@ aws ec2 create-tags \
 ## Crear una instancia EC2  (con una imagen de ubuntu 22.04 del 04/07/2022)
 echo ""
 echo "Creando instancia EC2 Ubuntu  ##################################"
-AWS_AMI_Ubuntu_ID=ami-052efd3df9dad4825
+AWS_AMI_Ubuntu_ID=ami-04b70fa74e45c3917
 AWS_EC2_INSTANCE_ID=$(aws ec2 run-instances \
   --image-id $AWS_AMI_Ubuntu_ID \
   --instance-type t2.micro \
@@ -271,7 +271,7 @@ aws ec2 create-tags \
 echo ""
 echo "Creando instancia EC2 Windows  ##################################"
 ########### MODIFICAR ami-0e38fa17744b2f6a5 EC2 Windows por la instancia deseada ##############
-AWS_AMI_Windows_ID=ami-0e38fa17744b2f6a5
+AWS_AMI_Windows_ID=ami-0f496107db66676ff
 ###############################################################################################
 AWS_EC2_INSTANCE_ID=$(aws ec2 run-instances \
   --image-id $AWS_AMI_Windows_ID \
